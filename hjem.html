@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!--
+FILE NAME: hjem.html
+WRITTEN BY:
+WHEN: Okstober 2017
+PURPOSE: Hjem-siden med Twitter og Facebook-feeder.
+-->
+
+<html>
+  <head>
+    <!-- Frameworks -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Google Open Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Selvlagde style-regler -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="icon" type="image/ico" href="img/favicon.ico"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hjem</title>
+  </head>
+  <body>
+
+    <!-- Facebook-widget script (from offical facebook site) -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+    <!-- Modifisert bootstrap navbar -->
+    <div id="navbar">
+      </div>
+
+
+    <!-- Bootstrap jumbotron for coverbilde og timer -->
+    <div class="jumbocolor">
+      <div class="jumbotron headerimghome shadow1" title="original image by Wikipedia user Autopilot">
+        <p id="nedtellerheading">Neste runde starter om ....</p>
+        <h1 id="nedteller">Laster....</h1>
+      </div>
+    </div>
+
+    <!-- Start på bootstrap-container med innholdet på siden -->
+    <div class="container customcontainer shadow1" role="main">
+
+      <div class="row textbox">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h1 class="textcenter">Norsk FPL</h1>
+          <p>
+            Hei og velkommen til NorskFPL.com! Denne siden er ment for deg som .......[må fullføres]
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row textbox">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <!-- Twitter-widget med script -->
+          <a class="twitter-timeline" href="https://twitter.com/OfficialFPL?ref_src=twsrc%5Etfw">Tweets by OfficialFPL</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <script>window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+              t._e.push(f);
+            };
+
+            return t;
+          }(document, "script", "twitter-wjs"));</script>
+        </div>
+        <div class="col-md-5">
+          <!-- Facebook-widget -->
+          <div class="fb-post" data-href="https://www.facebook.com/premierleague/posts/1897961043561635" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/premierleague/posts/1897961043561635" class="fb-xfbml-parse-ignore">
+            <p>Seriously special from Sofiane Boufal</p>Posted by <a href="https://www.facebook.com/premierleague/">Premier League</a> on&nbsp;<a href="https://www.facebook.com/premierleague/posts/1897961043561635">Saturday, 21 October 2017</a></blockquote></div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <!-- /container -->
+    <!-- Sticky footer -->
+    <footer class="footer">
+      <div class="container textcenter">
+        <p class="text-muted">Laget av latecomers høst 2017</p>
+      </div>
+    </footer>
+
+    <!-- Selvlagde skript brukt på denne siden -->
+    <script src="scripts/nedteller.js"></script>
+    <script src="scripts/menu.js"></script>
+
+
+</body>
+</html>

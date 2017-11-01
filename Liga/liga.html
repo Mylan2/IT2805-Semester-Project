@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!--
+FILNAVN: program.html
+LAGET AV: Mahamud Hussein
+NÅR: November 2017
+MÅL: Brukere kan melde seg inn i ligaen og se liste over de beste spillerne.
+-->
+
+<html>
+<head>
+  <!-- Frameworks -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Google Open Font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- Selvlagde style-regler -->
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/kamper.css">
+
+
+  <link rel="icon" type="image/ico" href="../img/favicon.ico"/>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kamper</title>
+
+
+</head>
+<body>
+ <div id="navbar">
+</div>
+
+
+  <!-- Bootstrap jumbotron for coverbilde og timer -->
+  <div class="jumbocolor">
+    <div class="jumbotron headerimg shadow1" title="original image by Wikipedia user Autopilot">
+      <p id="nedtellerheading">Neste runde starter om</p>
+      <h1 id="nedteller">Laster...</h1>
+    </div>
+  </div>
+
+  <!-- Start med innholdet på siden -->
+  <div class="container customcontainer shadow1" role="main">
+    <div class="row textbox">
+      <div class="col-md-12">
+        <h1 class="textcenter">FPL Liga</h1>
+      </div>
+    </div>
+    <div class="row textbox top2">
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <p>Her kan du melde deg inn i vårt private liga for FPL.com. </p>
+        <p><a class="btn btn-success" href="fantasy.premierleague.com/my-leagues/XXXXX/join/?autojoin-code=YYYYY-YYYYY" role="button">Autojoin Lenke</a></p>
+        <p class="top2">Vis du ikke har en FPL konto, kan du registrere deg <a href="https://users.premierleague.com/a/profile/register/personal">her.</a></p>
+      </div>
+      <div class="col-md-3">
+        <figure>
+          <img src="../img/cheers.jpg" class="fitparent">
+          <figcaption class="text-center">Louis Van Gall på skåler med reportere under jule høytiden 2015.Credit:PA UK</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-2"></div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- /container -->
+  <!-- Sticky footer -->
+  <footer class="footer">
+    <div class="container textcenter">
+      <p class="text-muted">Laget av latecomers høst 2015</p>
+    </div>
+  </footer>
+
+
+  <!-- Hente ut data fra kamper.json-->
+  <!-- Selvlagde skript brukt på denne siden -->
+  <script src="../scripts/menu.js"></script>
+  <script src="../scripts/nedteller.js"></script>
+  <script src="../scripts/program.js"></script>
+
+
+
+</body>
+</html>

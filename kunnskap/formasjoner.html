@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+FILNAVN: formasjoner.html
+LAGET AV: Mahamud Hussein
+NÅR: Oktober 2017
+MÅL: Grunnleggende informasjon for om formasjoner i spillet
+-->
+
+<html>
+<head>
+  <!-- Frameworks -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Google Open Font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- Selvlagde style-regler -->
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/formasjoner.css">
+
+  <link rel="icon" type="image/ico" href="../img/favicon.ico"/>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Formasjoner</title>
+</head>
+<body>
+  <!-- Modifisert bootstrap navbar -->
+  <div id="navbar">
+  </div>
+
+
+  <!-- Bootstrap jumbotron for coverbilde og timer -->
+  <div class="jumbocolor">
+    <div class="jumbotron headerimg shadow1" title="bildet er hentet fra metro.co.uk">
+      <p id="nedtellerheading">Neste runde starter om</p>
+      <h1 id="nedteller">Laster...</h1>
+    </div>
+  </div>
+
+  <!-- Start på bootstrap-container med innholdet på siden -->
+  <div class="container customcontainer shadow1" role="main">
+
+    <div class="row textbox">
+      <div class="col-md-12">
+        <h1 class="textcenter">Bli kjent med de ulike formasjonene</h1>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-10">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum tellus in diam vehicula, non euismod ipsum mattis. Mauris aliquam risus nec risus cursus faucibus. Sed auctor est a ipsum vulputate consectetur.
+        </p>
+        <p>
+          Disse er de mest brukte/kjente formasjonene:
+        </p>
+        <ul>
+          <li>
+            <button class="bareTekst" onclick="show('0')">3-4-3</button>
+          </li>
+          <li>
+            <button class="bareTekst" onclick="show('1')">3-5-2</button>
+          </li>
+          <li>
+            <button class="bareTekst" onclick="show('2')">4-5-1</button>
+          </li>
+          <li>
+            <button class="bareTekst" onclick="show('3')">4-3-3</button>
+          </li>
+          <li>
+            <button class="bareTekst" onclick="show('4')">5-2-3</button>
+          </li>
+        </ul>
+        <p>
+          Klikk på en av formasjonene for å lære mer om dem.
+        </p>
+      </div>
+      <div class="col-md-1">
+      </div>
+    </div>
+
+
+    <!-- Her limer scriptet inn HTML-kode -->
+    <div id="innhold">
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <div id="formasjonInfo"><h3>3-4-3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin laoreet enim vel fermentum. In non lacus velit. Praesent tincidunt, mi ac convallis accumsan, eros eros sollicitudin sapien, non hendrerit ipsum justo ac urna. Donec tempor quam lectus, eget fermentum ipsum feugiat id. Nulla commodo maximus ullamcorper. Ut a sagittis magna. Aliquam id urna ut tellus porta cursus. Curabitur consequat, augue eu ultricies vulputate, neque urna viverra nunc, quis pellentesque magna mi quis est. Donec porttitor quis neque a tristique.</p>
+          </div>
+        </div>
+        <div class="col-xs-1">
+
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-xs-12 vcenter" id="formasjonImg">
+          <img src="../img/formasjoner/343.png" alt="" title="bildet er hentet fra buildlineup.com"/>
+          <p class="text-muted">3-4-3 på banen</p>
+        </div>
+      </div>
+    </div>
+    <div class="row linear">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-2"></div>
+      <div class="col-xs-6"></div>
+      <div class="col-xs-3"><a href="kaptein.html"><h4>Kaptein valg &#8594;</h4></a></div>
+      <!--<div class="col-xs-1"></div>-->
+
+    </div>
+  </div>
+  <!-- /container -->
+  <!-- Sticky footer -->
+  <footer class="footer">
+    <div class="container textcenter">
+      <p class="text-muted">Laget av latecomers høst 2017</p>
+    </div>
+  </footer>
+
+  <!-- Skripter brukt på denne siden -->
+  <script src="../scripts/menu.js"></script>
+  <script src="../scripts/formasjoner.js"></script>
+  <script src="../scripts/nedteller.js"></script>
+
+
+</body>
+</html>

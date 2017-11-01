@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!--
+FILNAVN: fixtures.html
+LAGET AV: Thinius Rose
+NÅR: November 2017
+MÅL: Vise oversikt over kommende kamper
+Bruker: ../data/kamper.json
+-->
+
+<html>
+<head>
+  <!-- Frameworks -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Google Open Font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- Selvlagde style-regler -->
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/kamper.css">
+
+
+  <link rel="icon" type="image/ico" href="../img/favicon.ico"/>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kamper</title>
+
+
+</head>
+<body>
+ <div id="navbar">
+</div>
+
+
+  <!-- Bootstrap jumbotron for coverbilde og timer -->
+  <div class="jumbocolor">
+    <div class="jumbotron headerimg shadow1" title="original image by Wikipedia user Autopilot">
+      <p id="nedtellerheading">Neste runde starter om</p>
+      <h1 id="nedteller">Laster...</h1>
+    </div>
+  </div>
+
+  <!-- Start med innholdet på siden -->
+  <div class="container customcontainer shadow1" role="main">
+    <div class="row textbox">
+      <div class="col-md-12">
+        <h1 class="textcenter">Kamp Program</h1>
+      </div>
+    </div>
+    <div class="row textbox top2">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <p>Her kan du se kommende kamper for denne uken. </p>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+  <!-- /container -->
+  <!-- Sticky footer -->
+  <footer class="footer">
+    <div class="container textcenter">
+      <p class="text-muted">Laget av latecomers høst 2015</p>
+    </div>
+  </footer>
+
+
+  <!-- Hente ut data fra kamper.json-->
+  <!-- Selvlagde skript brukt på denne siden -->
+  <script src="../scripts/menu.js"></script>
+  <script src="../scripts/nedteller.js"></script>
+  <script src="../scripts/program.js"></script>
+
+
+
+</body>
+</html>
